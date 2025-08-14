@@ -1,7 +1,14 @@
 :root {
 	--color-white: #fff;
 	--color-black: #000;
-	--font-main: 'Roboto';
+	--color-dark-800: #18202d;
+	--color-orange-600: #e8252e;
+	--color-blue-200: #899cae;
+	--color-blue-400: #2dadd0;
+
+	--font-main: 'adineue PRO Cyr';
+	--font-secondary: 'Golos Text';
+
 	--dvh: 100vh;
 	--full-screen: calc(var(--dvh) * 100);
 }
