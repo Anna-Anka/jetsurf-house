@@ -1,0 +1,19 @@
+@include('./settings/_head.html', {
+'title' : 'JetSurf House — Электрические серфы | О нас',
+'description' : 'Jetsurf House — команда, влюблённая в электрические сёрфы. Мы продаём, сдаём в аренду и обучаем катанию, чтобы каждый почувствовал свободу и драйв на воде.',
+'keywords' : 'о компании Jetsurf House, команда jetsurf, история jetsurf, электросёрф, прокат сёрфов, обучение катанию на сёрфе, электрический сёрф',
+'robots' : 'noindex, nofollow',
+})
+
+@include('./components/blocks/_header.html')
+
+<main class="main about-page">
+    @include('./pages/about-page/_hero.html')
+    @include('./components/blocks/_advantages.html')
+    @include('./components/blocks/_dealer.html')
+    @include('./pages/about-page/_contacts.html')
+    @include('./pages/about-page/_reviews.html')
+</main>
+
+@include('./components/blocks/_footer.html')
+@include('./settings/_bottom.html')
