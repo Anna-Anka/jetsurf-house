@@ -1,0 +1,36 @@
+<article class="news-card @class">
+    <div class="news-card__top">
+        <div class="news-card__image">
+            <picture>
+                <source srcset="img/home-page/news-block/@img.avif" type="image/avif">
+                <source srcset="img/home-page/news-block/@img.webp" type="image/webp">
+                <img class="news-card__img" src="img/home-page/news-block/@img.jpg" alt="Фото" loading="lazy">
+            </picture>
+        </div>
+        <div class="news-card__wrapper">
+            <div class="news-card__headding">
+                <h3 class="news-card__title">
+                    @title
+                </h3>
+            </div>
+            @if(typeof link !== 'undefined' && link !== 'default') {
+            <a class="news-card__link button button--primary" href="#">
+                <span>@link</span>
+                <svg class="news-card__icon" aria-hidden>
+                    <use xlink:href="img/sprite.svg#arrow">
+                </svg>
+            </a>
+            }
+            @if(typeof link !== 'undefined' && link === 'default') {
+            <a class="news-card__link button button--primary" href="#">
+                <svg class="news-card__icon" aria-hidden>
+                    <use xlink:href="img/sprite.svg#arrow">
+                </svg>
+            </a>
+            }
+        </div>
+    </div>
+    <div class="news-card__text">
+        @for (var i = 0; i < text.length; i++) { <p> `+text[i]+` </p> }
+    </div>
+</article>
