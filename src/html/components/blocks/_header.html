@@ -1,3 +1,47 @@
 <header class="header">
+	<div class="container">
+		<nav class="header__menu">
+			<a class="logo header__logo" href="#">
+				<img class="logo__img" src="img/sprites/logo.svg" alt="логотип" width="174" height="52" />
+			</a>
 
+			<ul class="header__list">
+				<li class="header__item">
+					<a class="header__link header__link--active" href="#">Главная</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Каталог</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Новости</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">О нас</a>
+				</li>
+				<li class="header__item">
+					<a class="header__link" href="#">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="header__inner">
+				<li class="header__inner-link">
+					<a class="header__basket" href="#">
+						<span class="sr-only">Корзина товара</span>
+						<svg class="header__svg">
+							<use xlink:href="/img/sprite.svg#basket"></use>
+						</svg>
+						<span class="header__num">0</span>
+					</a>
+				</li>
+
+				<li class="header__inner-button">
+					<button class="header__burger" type="button" aria-label="Меню">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
