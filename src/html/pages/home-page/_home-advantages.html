@@ -1,0 +1,57 @@
+<section class="advantages">
+    <div class="container">
+        <div class="advantages__row advantages__row--header">
+            <img class="advantages__logo" src="img/logos/logo-short.svg" alt="Логотип" width="160" height="112" loading="lazy">
+            <h2 class="title advantages__title">
+                JetSurf-House —
+            </h2>
+            <div class="advantages__text">
+                <p>
+                    это не просто магазин, это сообщество единомышленников, которые разделяют любовь к морю и серфингу
+                </p>
+            </div>
+        </div>
+        <div class="advantages__row">
+            <h3 class="advantages__subtitle">Почему выбирают JetSurf-House?</h3>
+            <ul class="advantages__items">
+                <li class="advantages__item">
+                    @include('../../components/cards/_advantage-card.html', {
+                    'title': 'Официальный дилер',
+                    'modificator': 'advantage-card__header--horizontal',
+                    'icon': 'portfolio',
+                    'text': 'Сотрудчинаем напрямую с большим количеством поставщиков'
+                    })
+                </li>
+                <li class="advantages__item">
+                    @include('../../components/cards/_advantage-card.html', {
+                    'title': 'всегда в наличии',
+                    'modificator': 'advantage-card__header--horizontal',
+                    'icon': 'bag',
+                    'text': 'Одно предложение, раскрывающее данный пункт немного шире'
+                    })
+                </li>
+                <li class="advantages__item">
+                    @include('../../components/cards/_advantage-card.html', {
+                    'title': 'лучшая цена',
+                    'modificator': 'advantage-card__header--horizontal',
+                    'icon': 'ruble',
+                    'text': 'Одно предложение, раскрывающее данный пункт немного шире'
+                    })
+                </li>
+                <li class="advantages__item">
+                    @include('../../components/cards/_advantage-card.html', {
+                    'title': 'Гарантия на каждый товар',
+                    'modificator': 'advantage-card__header--horizontal',
+                    'icon': 'guarantee',
+                    'text': 'Мы уверены в качестве наших серфов и предоставляем гарантию на все товары'
+                    })
+                </li>
+            </ul>
+            <div class="advantages__subtext">
+                <p>
+                    Присоединяйтесь к нам и откройте для себя мир электрических серфов!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
