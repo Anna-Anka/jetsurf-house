@@ -2,7 +2,7 @@
 	<div class="container">
 		<nav class="header__menu">
 			<a class="logo header__logo" href="#">
-				<img class="logo__img" src="img/sprites/logo.svg" alt="логотип" width="174" height="52" />
+				<img class="logo__img" src="img/logos/logo-full.svg" alt="логотип" width="174" height="52" />
 			</a>
 
 			<ul class="header__list">
@@ -23,25 +23,20 @@
 				</li>
 			</ul>
 
-			<ul class="header__inner">
-				<li class="header__inner-link">
-					<a class="header__basket" href="#">
-						<span class="sr-only">Корзина товара</span>
-						<svg class="header__svg">
-							<use xlink:href="/img/sprite.svg#basket"></use>
-						</svg>
-						<span class="header__num">0</span>
-					</a>
-				</li>
+			<div class="header__inner">
+				<a class="header__basket" href="#">
+					<span class="sr-only">Корзина товара</span>
+					<svg class="header__svg">
+						<use xlink:href="/img/sprite.svg#basket"></use>
+					</svg>
+					<span class="header__num">0</span>
+				</a>
 
-				<li class="header__inner-button">
-					<button class="header__burger" type="button" aria-label="Меню">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</li>
-			</ul>
+				<button class="burger burger--close" type="button">
+					<span class="burger__line" aria-hidden="true"></span>
+					<span class="sr-only">Открыть меню</span>
+				</button>
+			</div>
 		</nav>
 	</div>
 </header>
