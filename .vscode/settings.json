@@ -1,0 +1,9 @@
+{
+  "[html]": {
+    "editor.defaultFormatter": "svipas.prettier-plus",
+    "editor.formatOnSave": false
+  },
+  "editor.wordWrap": "off",
+  "editor.wrappingIndent": "none"
+}
+
