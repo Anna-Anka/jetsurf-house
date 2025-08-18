@@ -1,5 +1,5 @@
 .header__list {
-  @include mq(lg, max) {
+  @include mq(lg) {
     display: none;
   }
 }
