@@ -1,18 +1,17 @@
 :root {
-	--color-white: #fff;
-	--color-black: #000;
-	--color-dark-800: #18202d;
-	--color-orange-600: #e8252e;
-	--color-blue-200: #899cae;
-	--color-blue-400: #2dadd0;
-	--gradient-blue: linear-gradient(
-		270deg,
-		#5bd0f1 0%,
-		#2dadd0 49.52%,
-		#1b6ab3 100%
-	);
-	--font-main: 'adineue PRO Cyr';
-	--font-secondary: 'Golos Text';
-	--dvh: 100vh;
-	--full-screen: calc(var(--dvh) * 100);
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark-800: #18202d;
+  --color-orange-600: #e8252e;
+  --color-blue-200: #899cae;
+  --color-blue-400: #2dadd0;
+  --color-blue-light-transparent: rgba(230, 240, 242, 0.75);
+  --gradient-blue: linear-gradient(270deg,
+      #5bd0f1 0%,
+      #2dadd0 49.52%,
+      #1b6ab3 100%);
+  --font-main: 'adineue PRO Cyr';
+  --font-secondary: 'Golos Text';
+  --dvh: 100vh;
+  --full-screen: calc(var(--dvh) * 100);
 }
