@@ -1,50 +1,73 @@
-// Бургер-меню
-.header__burger {
-  display: none; // Скрыто по умолчанию
+.burger-button {
+	--burger-width: 28px;
+	--burger-height: 26px;
+	--burger-line-height: 2px;
+	--burger-border-radius: 2px;
+	--burger-color: var(--color-dark-800);
 
-  @include mq(lg) {
-    display: block;
-    width: 30px;
-    height: 20px;
-    margin-left: 20px;
-    position: relative;
-    z-index: 11;
-    order: 3;
-    cursor: pointer;
-    background-color: var(--color-blue-400); // середина
-    transition: all 0.3s ease;
+	position: relative;
+	width: var(--burger-width);
+	height: var(--burger-height);
+	color: var(--burger-color);
 
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: var(--color-blue-400);
-      left: 0;
-      transition: all 0.3s ease;
-    }
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: var(--burger-line-height);
+		background-color: currentcolor;
+		transition:
+			transform 0.3s ease-in-out,
+			top 0.3s ease-in-out;
+	}
 
-    &::before {
-      top: 0;
-    }
+	&::before {
+		top: 0;
+	}
 
-    &::after {
-      bottom: 0;
-    }
+	&::after {
+		top: calc(100% - var(--burger-line-height));
+	}
 
-    &.active {
-      background-color: transparent; // скрываем середину
+	@include mq(lg, min) {
+		display: none;
+	}
 
-      &::before {
-        transform: rotate(45deg);
-        top: 50%;
-      }
+	&__line {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		height: var(--burger-line-height);
+		background-color: currentcolor;
+		transform: translateY(-50%);
+		transition: transform 0.3s ease-in-out;
+	}
 
-      &::after {
-        transform: rotate(-45deg);
-        bottom: 50%;
-      }
-    }
-  }
+	&--active {
+		z-index: 60;
+
+		&::before,
+		&::after {
+			top: 50%;
+			transition:
+				transform 0.3s ease-in-out,
+				top 0.3s ease-in-out;
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		.burger-button__line {
+			transform: scale(0);
+			transition: transform 0.3s ease-in-out;
+		}
+	}
 }

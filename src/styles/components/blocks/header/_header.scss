@@ -1,51 +1,40 @@
 .header {
-  padding: 30px 0;
+	padding: 15px 0;
 
-  &__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--font-secondary), 'Arial', sans-serif;
-    font-weight: 400;
-  }
+	&__navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-family: var(--font-secondary), 'Arial', sans-serif;
+		font-weight: 400;
+	}
 
-  &__list {
-    display: flex;
-    gap: 32px;
-  }
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
 
-  &__inner {
-    display: flex;
-    align-items: center;
-  }
+	&__basket {
+		position: relative;
+		padding: 8px;
+	}
 
-  &__basket {
-    position: relative;
-    padding: 8px;
-  }
+	&__num {
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 30px;
+		padding: 0 4px;
+		font-weight: 600;
+		font-size: 8px;
+		text-align: center;
+		color: var(--color-white);
+		background-color: var(--color-orange-600);
+	}
 
-  &__num {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 15px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-orange-600);
-    top: 0;
-    right: 0;
-    font-size: 11px;
-    color: white;
-    text-align: center;
-    line-height: 150%;
-    font-weight: 600;
-    font-size: 8px;
-  }
-
-  &__svg {
-    width: 28px;
-    height: 28px;
-  }
-
+	&__svg {
+		width: 28px;
+		height: 28px;
+	}
 }
