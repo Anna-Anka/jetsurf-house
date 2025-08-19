@@ -11,12 +11,7 @@
 
   &__list {
     display: flex;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 60px;
-    }
+    gap: 32px;
   }
 
   &__inner {
@@ -27,11 +22,6 @@
   &__basket {
     position: relative;
     padding: 8px;
-
-    .header__num {
-      font-weight: 600;
-      font-size: 8px;
-    }
   }
 
   &__num {
@@ -42,13 +32,15 @@
     width: 15px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
-    top: 0px;
-    right: 0px;
+    background-color: var(--color-orange-600);
+    top: 0;
+    right: 0;
     font-size: 11px;
     color: white;
     text-align: center;
     line-height: 150%;
+    font-weight: 600;
+    font-size: 8px;
   }
 
   &__svg {
