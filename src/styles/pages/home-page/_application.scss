@@ -10,13 +10,12 @@
 		left: 50%;
 		top: 50%;
 		z-index: -1;
-		width: 150%;
-		height: 160%;
+		width: 105vw;
+		height: 200%;
 		background-image: url('../img/decor/application-wave.svg');
 		transform: translate(-50%, -50%);
 
 		@include mq(xl) {
-			width: 105vw;
 			height: 100%;
 		}
 	}
