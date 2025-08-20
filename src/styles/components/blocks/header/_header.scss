@@ -1,21 +1,40 @@
 .header {
-	position: relative;
-	left: 0;
-	right: 0;
-	top: 0;
-	z-index: 2;
+	padding: 15px 0;
 
-	&__container {
-		top: -50px;
-		transition: top 0.3s;
+	&__navigation {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-family: var(--font-secondary), 'Arial', sans-serif;
+		font-weight: 400;
 	}
 
-	&--fixed {
-		.header__container {
-			position: fixed;
-			left: 0;
-			width: 100%;
-			transform: translateY(0);
-		}
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	&__basket {
+		position: relative;
+		padding: 8px;
+	}
+
+	&__num {
+		position: absolute;
+		right: 0;
+		top: 0;
+		border-radius: 30px;
+		padding: 0 4px;
+		font-weight: 600;
+		font-size: 8px;
+		text-align: center;
+		color: var(--color-white);
+		background-color: var(--color-orange-600);
+	}
+
+	&__svg {
+		width: 28px;
+		height: 28px;
 	}
 }

@@ -1,3 +1,41 @@
+<div class="overlay" aria-hidden data-menu-overlay></div>
 <header class="header">
+    <div class="container">
+        <nav class="header__navigation">
+            <a class="logo header__logo" href="#">
+                <img class="logo__img" src="img/logos/logo-full.svg" alt="логотип" width="174" height="52" />
+            </a>
 
+            <ul class="burger-menu" id="header-burger-menu" data-menu>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>Главная</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>Каталог</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>Новости</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>О нас</a>
+                </li>
+                <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#" data-menu-link>Контакты</a>
+                </li>
+            </ul>
+            <div class="header__inner">
+                <a class="header__basket" href="#">
+                    <span class="sr-only">Корзина товара</span>
+                    <svg class="header__svg">
+                        <use xlink:href="/img/sprite.svg#basket"></use>
+                    </svg>
+                    <span class="header__num">0</span>
+                </a>
+
+                <button class="burger-button" aria-controls="header-burger-menu" aria-label="Открыть меню" aria-expanded="false" data-burger-button>
+                    <span class="burger-button__line" aria-hidden></span>
+                </button>
+            </div>
+        </nav>
+    </div>
 </header>

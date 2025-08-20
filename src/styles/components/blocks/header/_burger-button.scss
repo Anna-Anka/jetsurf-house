@@ -1,9 +1,9 @@
 .burger-button {
-	--burger-width: 30px;
-	--burger-height: 30px;
+	--burger-width: 28px;
+	--burger-height: 26px;
 	--burger-line-height: 2px;
-	--burger-border-radius: 0;
-	--burger-color: var(--color-black);
+	--burger-border-radius: 2px;
+	--burger-color: var(--color-dark-800);
 
 	position: relative;
 	width: var(--burger-width);
@@ -47,6 +47,8 @@
 	}
 
 	&--active {
+		z-index: 60;
+
 		&::before,
 		&::after {
 			top: 50%;
