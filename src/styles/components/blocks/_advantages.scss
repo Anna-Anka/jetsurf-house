@@ -1,0 +1,92 @@
+.advantages {
+	&__row {
+		@include flex-alignment(40px, center, center, column);
+
+		text-align: center;
+
+		@include mq(md) {
+			gap: 20px;
+		}
+
+		&--header {
+			&:not(:last-child) {
+				margin-bottom: 60px;
+
+				@include mq(lg) {
+					margin-bottom: 40px;
+				}
+			}
+		}
+	}
+
+	&__logo {
+		width: 160px;
+		height: 110px;
+		object-fit: contain;
+
+		@include mq(lg) {
+			width: 80px;
+			height: 56px;
+		}
+
+		@include mq(sm) {
+			width: 68px;
+			height: 48px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 0;
+
+		@include mq(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		font-size: 28px;
+
+		@include mq(xl) {
+			font-size: 28px;
+		}
+
+		@include mq(lg) {
+			font-size: 24px;
+		}
+
+		@include mq(md) {
+			font-size: 18px;
+		}
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		font-size: 32px;
+
+		@include mq(xl) {
+			font-size: 28px;
+		}
+
+		@include mq(md) {
+			font-size: 18px;
+		}
+	}
+
+	&__subtext {
+		font-size: 28px;
+
+		@include mq(lg) {
+			font-size: 24px;
+		}
+
+		@include mq(md) {
+			font-size: 18px;
+		}
+	}
+}
