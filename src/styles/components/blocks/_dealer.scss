@@ -1,0 +1,46 @@
+.dealer {
+	&__title {
+		margin-bottom: 60px;
+		text-align: center;
+
+		@include mq(lg) {
+			margin-bottom: 40px;
+		}
+
+		@include mq(sm) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__text {
+		font-size: 28px;
+		text-align: center;
+
+		@include mq(lg) {
+			font-size: 24px;
+		}
+
+		@include mq(md) {
+			font-size: 18px;
+		}
+	}
+
+	&__items {
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.swiper-slide-active {
+		max-width: 498px;
+
+		.dealer-card {
+			&__image {
+				height: 350px;
+			}
+
+			&__body {
+				display: block;
+			}
+		}
+	}
+}
