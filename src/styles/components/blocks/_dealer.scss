@@ -12,6 +12,10 @@
 		}
 	}
 
+	&__swiper {
+		padding-bottom: 60px;
+	}
+
 	&__text {
 		font-size: 28px;
 		text-align: center;
@@ -36,11 +40,28 @@
 		.dealer-card {
 			&__image {
 				height: 350px;
+
+				@include mq(lg) {
+					height: 290px;
+				}
 			}
 
 			&__body {
 				display: block;
 			}
 		}
+	}
+
+	.swiper-pagination-bullet {
+		margin: 0 20px 0 0 !important;
+		width: 10px;
+		height: 10px;
+		background-color: var(--color-dark-800);
+		opacity: 0.5;
+		transition: opacity 0.3s;
+	}
+
+	.swiper-pagination-bullet-active {
+		opacity: 1;
 	}
 }
