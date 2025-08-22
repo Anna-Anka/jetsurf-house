@@ -34,7 +34,7 @@ body {
 	overflow: hidden;
 }
 
-.button {
+._button {
 	@include flex-alignment(16px);
 
 	border-radius: 30px;
@@ -147,7 +147,7 @@ body {
 	box-sizing: border-box;
 }
 
-.overlay {
+._overlay {
 	position: fixed;
 	left: 0;
 	top: 0;
