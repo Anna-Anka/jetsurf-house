@@ -1,0 +1,169 @@
+.application {
+	position: relative;
+	margin: 100px 0;
+
+	&::before {
+		@include bg-properties;
+
+		content: '';
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		z-index: -1;
+		width: 105vw;
+		height: 200%;
+		background-image: url('../img/decor/application-wave.svg');
+		transform: translate(-50%, -50%);
+
+		@include mq(xl) {
+			height: 100%;
+		}
+	}
+
+	&__wrapper {
+		@include bg-properties;
+
+		display: flex;
+		justify-content: space-between;
+		border-radius: 30px;
+		padding: 40px 0 40px 40px;
+		background-image: url('../img/decor/application-bg-desktop.png');
+		filter: drop-shadow(0 0 8px rgba(27, 106, 179, 0.25));
+		backdrop-filter: blur(10px);
+		gap: 40px;
+
+		@include mq(xxl) {
+			padding-right: 40px;
+			background-image: url('../img/decor/application-bg.png');
+		}
+
+		@include mq(lg) {
+			flex-direction: column;
+			padding: 20px 30px;
+			gap: 20px;
+		}
+
+		@include mq(md) {
+			padding: 16px 12px;
+			gap: 16px;
+		}
+	}
+
+	&__info {
+		@include flex-simple(20px, column);
+
+		width: 100%;
+		max-width: 650px;
+
+		@include mq(lg) {
+			max-width: 100%;
+			gap: 8px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 0;
+
+		@include mq(lg) {
+			margin-bottom: 0;
+		}
+	}
+
+	&__text {
+		margin-top: auto;
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 552px;
+
+		@include mq(lg) {
+			max-width: 100%;
+		}
+	}
+
+	&__items {
+		@include flex-simple(20px, column);
+
+		padding-right: 40px;
+
+		@include mq(xxl) {
+			padding-right: 0;
+		}
+
+		@include mq(lg) {
+			gap: 16px;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 84px;
+
+			@include mq(xl) {
+				margin-bottom: 40px;
+			}
+
+			@include mq(lg) {
+				margin-bottom: 20px;
+			}
+
+			@include mq(md) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		@include mq(xl) {
+			flex-direction: column;
+			align-items: flex-end;
+		}
+
+		@include mq(lg) {
+			flex-direction: column-reverse;
+			gap: 16px;
+		}
+	}
+
+	&__subtext {
+		width: 100%;
+		max-width: 228px;
+		font-family: var(--font-secondary);
+		font-size: 15px;
+		letter-spacing: 0;
+		text-align: right;
+
+		@include mq(xl) {
+			max-width: 100%;
+		}
+
+		@include mq(lg) {
+			font-size: 12px;
+		}
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	&__button {
+		padding: 15px 45px;
+
+		@include mq(xxl) {
+			font-size: 18px;
+		}
+
+		@include mq(lg) {
+			width: 100%;
+		}
+	}
+}

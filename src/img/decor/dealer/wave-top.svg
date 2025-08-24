@@ -1,0 +1,17 @@
+<svg width="1600" height="120" viewBox="0 0 1600 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-125.556" y="-20.2588" width="1851" height="154.74"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(10px);clip-path:url(#bgblur_0_4106_4435_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_f_4106_4435)" data-figma-bg-blur-radius="20">
+<path d="M985.444 72.2412C734.608 76.7506 608.396 130.018 366.204 110C266.9 101.792 213.256 77.1939 113.889 69.9389C28.3855 63.6962 -105.556 69.9389 -105.556 69.9389L-105.556 -0.258804H1705.44V58.7407C1705.44 58.7407 1512.81 100.302 1396.3 100.302C1235.58 100.302 1146.14 69.3523 985.444 72.2412Z" fill="url(#paint0_linear_4106_4435)"/>
+</g>
+<defs>
+<filter id="filter0_f_4106_4435" x="-125.556" y="-20.2588" width="1851" height="154.74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2.5" result="effect1_foregroundBlur_4106_4435"/>
+</filter>
+<clipPath id="bgblur_0_4106_4435_clip_path" transform="translate(125.556 20.2588)"><path d="M985.444 72.2412C734.608 76.7506 608.396 130.018 366.204 110C266.9 101.792 213.256 77.1939 113.889 69.9389C28.3855 63.6962 -105.556 69.9389 -105.556 69.9389L-105.556 -0.258804H1705.44V58.7407C1705.44 58.7407 1512.81 100.302 1396.3 100.302C1235.58 100.302 1146.14 69.3523 985.444 72.2412Z"/>
+</clipPath><linearGradient id="paint0_linear_4106_4435" x1="800" y1="138.302" x2="800" y2="-0.698256" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.75"/>
+<stop offset="1" stop-color="white"/>
+</linearGradient>
+</defs>
+</svg>

@@ -2,10 +2,9 @@
 	padding: 15px 0;
 
 	&__navigation {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		font-family: var(--font-secondary), 'Arial', sans-serif;
+		@include flex-alignment(0, space-between);
+
+		font-family: var(--font-secondary);
 		font-weight: 400;
 	}
 

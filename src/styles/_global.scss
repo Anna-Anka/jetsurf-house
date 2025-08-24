@@ -12,7 +12,7 @@ body {
 	margin: 0 auto;
 	padding: 0 20px;
 	width: 100%;
-	max-width: 1400px;
+	max-width: 1440px;
 
 	@include mq(md) {
 		padding: 0 10px;
@@ -34,13 +34,14 @@ body {
 	overflow: hidden;
 }
 
-.button {
+._button {
 	@include flex-alignment(16px);
 
 	border-radius: 30px;
 	padding: 15px 60px;
 	font-family: var(--font-secondary);
 	font-weight: 700;
+	text-align: center;
 	text-transform: uppercase;
 	color: var(--color-white);
 
@@ -58,6 +59,37 @@ body {
 
 	@include mq(md) {
 		font-size: 14px;
+	}
+}
+
+._field {
+	border: 1px solid var(--color-blue-200);
+	border-radius: 30px;
+	padding: 15px 20px;
+	width: 100%;
+	font-family: var(--font-secondary);
+	font-size: 18px;
+	letter-spacing: 0;
+	color: var(--color-dark-800);
+	background-color: var(--color-blue-light-transparent);
+	transition: border-color 0.3s;
+
+	&::placeholder {
+		color: inherit;
+	}
+
+	&:focus {
+		outline: 0;
+		border-color: var(--color-blue-400);
+	}
+
+	&--message {
+		height: 108px;
+		resize: none;
+
+		@include mq(xl) {
+			height: 55px;
+		}
 	}
 }
 
@@ -115,7 +147,7 @@ body {
 	box-sizing: border-box;
 }
 
-.overlay {
+._overlay {
 	position: fixed;
 	left: 0;
 	top: 0;

@@ -1,0 +1,30 @@
+.about-page {
+	.advantages {
+		&__items {
+			display: flex;
+			gap: 20px;
+
+			@include mq(xl) {
+				flex-wrap: wrap;
+				padding: 0 80px;
+				gap: 20px 10px;
+			}
+
+			@include mq(md) {
+				padding: 0;
+			}
+		}
+
+		&__item {
+			flex-basis: calc(50% - 10px);
+
+			@include mq(xl) {
+				flex-basis: calc(50% - 5px);
+			}
+
+			@include mq(sm) {
+				flex-basis: 100%;
+			}
+		}
+	}
+}

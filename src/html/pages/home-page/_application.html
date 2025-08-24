@@ -1,0 +1,40 @@
+<section class="application">
+    <div class="container">
+        <div class="application__wrapper">
+            <div class="application__info">
+                <h2 class="application__title title">
+                    Оставьте заявку, и мы свяжемся с вами в ближайшее время
+                </h2>
+                <div class="application__text">
+                    <p>
+                        Наш менеджер расскажет вам подробнее об условиях доставки и предложит варианты
+                    </p>
+                </div>
+            </div>
+            <form class="application__form">
+                <div class="application__items">
+                    <div>
+                        <label class="sr-only" for="application-name">Введите ваше имя</label>
+                        <input class="_field" id="application-name" name="name" type="text" placeholder="Имя" required>
+                    </div>
+                    <div>
+                        <label class="sr-only" for="application-tel">Введите ваш номер телефона</label>
+                        <input class="_field" id="application-tel" name="name" type="tel" placeholder="+7 999 000 00 00" required>
+                    </div>
+                    <div>
+                        <label class="sr-only" for="application-message">Введите сообщение</label>
+                        <textarea class="_field _field--message" name="message" id="application-message" placeholder="Ваш комментарий"></textarea>
+                    </div>
+                </div>
+                <div class="application__footer">
+                    <p class="application__subtext">
+                        Нажимая на кнопку, вы принимаете условия <a href="#">политики конфиденциальности</a>
+                    </p>
+                    <button class="application__button _button _button--primary" type="submit">
+                        Оставить заявку
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

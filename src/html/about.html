@@ -9,8 +9,12 @@
 
 <main class="main about-page">
     @include('./pages/about-page/_hero.html')
-    @include('./components/blocks/_advantages.html')
-    @include('./components/blocks/_dealer.html')
+    @include('./pages/about-page/_about-advantages.html')
+    @include('./components/blocks/_dealer.html', {
+    'class': 'dealer--gradient',
+    'title': 'JetSurf-House — официальный дилер ведущих производителей электричесих сёрфов и электрофойлов:',
+    'text': 'Присоединяйтесь к нам и откройте для себя мир электрических серфов!',
+    })
     @include('./pages/about-page/_contacts.html')
     @include('./pages/about-page/_reviews.html')
 </main>

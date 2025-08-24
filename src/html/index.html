@@ -10,9 +10,11 @@
 <main class="main home-page">
     @include('./pages/home-page/_hero.html')
     @include('./pages/home-page/_catalog.html')
-    @include('./components/blocks/_dealer.html')
-    <!-- @include('./pages/home-page/_news.html') -->
-    @include('./components/blocks/_advantages.html')
+    @include('./components/blocks/_dealer.html', {
+    'title': 'JetSurf-House — официальный дилер:'
+    })
+    @include('./pages/home-page/_news.html')
+    @include('./pages/home-page/_home-advantages.html')
     @include('./pages/home-page/_application.html')
     @include('./pages/home-page/_location.html')
 </main>
