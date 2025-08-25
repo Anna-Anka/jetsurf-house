@@ -1,23 +1,51 @@
 <article class="product-card">
-  <div class="product-card__badge">@badge</div>
 
+    @if(typeof discount !== 'undefined' && discount) {
+    <span class="product-card__badge">@discount</span>
+    }
 
-  <img class="product-card__image" src="@img" alt="@alt">
-
-
-  <div class="product-card__info">
-    <h3 class="product-card__brand">@brand</h3>
-    <p class="product-card__title">@title</p>
-
-    <div class="product-card__prices">
-      <span class="product-card__price--new">@priceNew</span>
-      <span class="product-card__price--old">@priceOld</span>
+    <div class="product-card__picture">
+        <picture>
+            <source srcset="img/home-page/catalog/products/@img.avif" type="image/avif">
+            <source srcset="img/home-page/catalog/products/@img.webp" type="image/webp">
+            <img class="product-card__img" src="img/home-page/catalog/products/@img.png" alt="@title" width="295" height="295" loading="lazy">
+        </picture>
     </div>
-  </div>
 
-  <button class="product-card__cart-btn">
-    <svg width="24" height="24" fill="currentColor">
-      <use xlink:href="img/sprite.svg#basket"></use>
-    </svg>
-  </button>
+
+    <div class="product-card__content">
+        <span class="product-card__brand">@brand</span>
+        <h3 class="product-card__title">
+            <a class="product-card__link" href="#">@title</a>
+        </h3>
+
+        <ul class="product-card__characteristics">
+            <li class="product-card__characteristic">
+                <span class="product-card__icon" style="background-image: url('img/home-page/catalog/characteristics/speed.svg');" aria-hidden></span>
+                55 км/ч
+            </li>
+            <li class="product-card__characteristic">
+                <span class="product-card__icon" style="background-image: url('img/home-page/catalog/characteristics/battery.svg');" aria-hidden></span>
+                52V 74Ah
+            </li>
+            <li class="product-card__characteristic">
+                <span class="product-card__icon" style="background-image: url('img/home-page/catalog/characteristics/weight.svg');" aria-hidden></span>
+                вес до 120 кг
+            </li>
+        </ul>
+
+        <div class="product-card__info">
+            <div class="product-card__prices">
+                <span class="product-card__price">@price</span>
+                @if(typeof priceOld !== 'undefined' && priceOld) {
+                <span class="product-card__salary">@priceOld</span>
+                }
+            </div>
+            <button class="product-card__btn" aria-label="Добавить в корзину">
+                <svg width="24" height="24" fill="currentColor">
+                    <use xlink:href="img/sprite.svg#basket"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </article>
