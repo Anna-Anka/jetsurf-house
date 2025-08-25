@@ -14,12 +14,8 @@
 	}
 
 	&__menu {
-		display: flex;
-		overflow-x: auto;
 		margin-bottom: 20px;
 		padding: 8px;
-		scroll-snap-type: x mandatory;
-		gap: 20px;
 
 		@include mq(md) {
 			gap: 10px;
