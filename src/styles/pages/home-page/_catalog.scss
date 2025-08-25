@@ -1,5 +1,13 @@
 .home-catalog {
+	position: relative;
+	z-index: 2;
+	margin-top: -150px;
 	padding: 60px 0;
+
+	@include mq(xxl) {
+		margin-top: 0;
+		padding-top: 30px;
+	}
 
 	@include mq(xl) {
 		padding: 20px 0;
