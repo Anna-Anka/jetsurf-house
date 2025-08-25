@@ -63,7 +63,7 @@
 		}
 
 		@include mq(sm) {
-			gap: 10px;
+			gap: 16px;
 		}
 	}
 
@@ -162,10 +162,18 @@
 			@include mq(md) {
 				font-size: 12px;
 			}
+
+			@include mq(sm) {
+				font-family: var(--font-main);
+			}
 		}
 
 		&__link {
 			text-decoration-line: underline;
+
+			@include mq(sm) {
+				text-decoration: none;
+			}
 		}
 	}
 
