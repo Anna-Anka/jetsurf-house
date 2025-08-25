@@ -1,74 +1,76 @@
-.news-block {
-	@include flex-simple(40px, column);
+.home-page {
+	.news-block {
+		@include flex-simple(40px, column);
 
-	@include mq(xl) {
-		gap: 32px;
-	}
+		@include mq(xl) {
+			gap: 32px;
+		}
 
-	@include mq(md) {
-		gap: 28px;
-	}
+		@include mq(md) {
+			gap: 28px;
+		}
 
-	.container {
-		&--padding {
+		.container {
+			&--padding {
+				@include mq(xl) {
+					padding-right: 0;
+				}
+
+				@include mq(md) {
+					padding-right: 0;
+				}
+			}
+		}
+
+		&__title {
 			@include mq(xl) {
-				padding-right: 0;
+				padding-right: 20px;
 			}
 
 			@include mq(md) {
-				padding-right: 0;
+				padding-right: 10px;
 			}
 		}
-	}
 
-	&__title {
-		@include mq(xl) {
-			padding-right: 20px;
-		}
+		&__items {
+			display: flex;
+			overflow-x: auto;
+			padding-bottom: 8px;
+			gap: 20px;
 
-		@include mq(md) {
-			padding-right: 10px;
-		}
-	}
-
-	&__items {
-		display: flex;
-		overflow-x: auto;
-		padding-bottom: 8px;
-		gap: 20px;
-
-		@include mq(xl, min) {
-			display: grid;
-			grid-auto-rows: auto;
-			grid-template-columns: 1fr 1fr;
-			padding-bottom: 0;
-			gap: 40px;
-		}
-	}
-
-	&__item {
-		@include mq(xl) {
-			flex: 0 0 444px;
-		}
-
-		@include mq(md) {
-			flex-basis: 260px;
-		}
-
-		&--large {
 			@include mq(xl, min) {
-				grid-row: 1 / span 2;
+				display: grid;
+				grid-auto-rows: auto;
+				grid-template-columns: 1fr 1fr;
+				padding-bottom: 0;
+				gap: 40px;
 			}
 		}
-	}
 
-	&__link {
-		margin-left: auto;
-		max-width: fit-content;
+		&__item {
+			@include mq(xl) {
+				flex: 0 0 444px;
+			}
 
-		@include mq(md) {
-			margin: 0 auto;
-			max-width: 100%;
+			@include mq(md) {
+				flex-basis: 260px;
+			}
+
+			&--large {
+				@include mq(xl, min) {
+					grid-row: 1 / span 2;
+				}
+			}
+		}
+
+		&__link {
+			margin-left: auto;
+			max-width: fit-content;
+
+			@include mq(md) {
+				margin: 0 auto;
+				max-width: 100%;
+			}
 		}
 	}
 }
