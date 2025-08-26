@@ -1,0 +1,16 @@
+@mixin badge {
+	border-radius: 30px;
+	padding: 10px 15px;
+	font-family: var(--font-secondary);
+	font-weight: 600;
+	color: var(--color-white);
+	background-color: var(--color-orange-600);
+}
+
+@mixin link-cover {
+	&::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+	}
+}

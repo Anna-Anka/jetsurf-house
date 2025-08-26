@@ -1,0 +1,66 @@
+<section class="hero" style="background-image: url('img/home-page/hero/bg.jpg');">
+    <div class="container">
+        <div class="hero__wrapper">
+            <div class="hero__poster">
+                <div class="hero-poster">
+                    <div class="hero-poster__content">
+                        <p class="hero-poster__text">
+                            Дополнительный текст афиши об условиях акции
+                        </p>
+                        <a class="hero-poster__link" href="#">
+                            Заголовок афиши о проводимой акции
+                        </a>
+                    </div>
+                    <div class="hero-poster__image">
+                        <picture>
+                            <source srcset="img/home-page/hero/poster/poster.avif" type="image/avif">
+                            <source srcset="img/home-page/hero/poster/poster.webp" type="image/webp">
+                            <img src="img/home-page/hero/poster/poster.png" alt="серф" width="246" height="240" loading="lazy">
+                        </picture>
+                    </div>
+                    <span class="hero-poster__badge">-20%</span>
+                </div>
+            </div>
+            <div class="hero__product">
+                @include('../../components/cards/_product-card.html', {
+                "badge": "-20%",
+                "img": "1",
+                "brand": "Rush Wave",
+                "title": "Электрический серф 12kW Электрический серф 12kW",
+                "titleTag": "span",
+                "price": "1 330 000 ₽",
+                "priceOld": "1 600 000 ₽"
+                })
+            </div>
+            <div class="hero__catalog">
+                <div class="hero-catalog">
+                    <p class="hero-catalog__text">
+                        Дополнительный текст о каталоге
+                    </p>
+                    <a class="hero-catalog__link" href="#">каталог
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.34744 28.0589C5.98217 27.6937 5.77697 27.1983 5.77697 26.6817C5.77697 26.1651 5.98217 25.6697 6.34744 25.3045L22.304 9.34786L10.4791 9.35062C9.96192 9.35062 9.46588 9.14515 9.10016 8.77943C8.73443 8.4137 8.52897 7.91767 8.52897 7.40046C8.52897 6.88324 8.73443 6.38721 9.10016 6.02148C9.46588 5.65576 9.96192 5.4503 10.4791 5.4503L27.0059 5.4503C27.2621 5.44997 27.5158 5.50019 27.7526 5.59808C27.9893 5.69597 28.2044 5.83961 28.3856 6.02076C28.5668 6.20192 28.7104 6.41703 28.8083 6.65378C28.9062 6.89053 28.9564 7.14427 28.9561 7.40046V23.9272C28.9561 24.4444 28.7506 24.9405 28.3849 25.3062C28.0191 25.6719 27.5231 25.8774 27.0059 25.8774C26.4887 25.8774 25.9927 25.6719 25.6269 25.3062C25.2612 24.9405 25.0557 24.4444 25.0557 23.9272L25.0585 12.1023L9.1019 28.0589C8.73663 28.4242 8.24123 28.6294 7.72467 28.6294C7.20811 28.6294 6.7127 28.4242 6.34744 28.0589Z" fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero__application">
+                <div class="hero-application">
+                    <div class="hero-application__content">
+                        <span class="hero-application__title">
+                            Оставьте заявку, и мы свяжемся с вами в ближайшее время
+                        </span>
+                        <p class="hero-application__text">
+                            Наш менеджер расскажет вам подробнее об условиях доставки и предложит варианты
+                        </p>
+                    </div>
+                    <a class="hero-application__link _button _button--primary" href="#">Оставить заявку</a>
+                </div>
+            </div>
+            <h1 class="hero__title">
+                <span>Электрические сёрфы</span>
+                <span>выбор будущего</span>
+            </h1>
+        </div>
+    </div>
+</section>
