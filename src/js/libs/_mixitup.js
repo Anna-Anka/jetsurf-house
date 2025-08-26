@@ -1,11 +1,11 @@
-// import mixitup from 'mixitup';
+(function() {
+    const catalog = document.querySelector('.home-catalog__items')
 
-// (function() {
-//     const wrappers = document.querySelectorAll('.')
-
-//     if (wrappers) {
-//         wrappers.forEach((wrapper) => {
-//             mixitup(wrapper);
-//         })
-//     }
-// })
+    if (catalog) {
+        mixitup(catalog, {
+            load: {
+                filter: '.category-electric-surfboards'
+            }
+        });
+    }
+})()
