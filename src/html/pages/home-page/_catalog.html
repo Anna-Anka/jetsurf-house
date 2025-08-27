@@ -1,176 +1,181 @@
 <section class="home-catalog">
-    <div class="container">
+  <div class="container">
 
-        <h2 class="home-catalog__title _title">Наши электросёрфы</h2>
+    <h2 class="home-catalog__title _title">Наши электросёрфы</h2>
 
-        <ul class="home-catalog__menu">
-            <li class="home-catalog__tab">
-                <button class="home-catalog__btn" type="button" data-filter=".category-electric-surfboards">
-                    <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/1.png');" aria-hidden></span>
-                    Электросёрфы
-                </button>
-            </li>
+    <ul class="home-catalog__menu">
+      <li class="home-catalog__tab">
+        <button class="home-catalog__btn" type="button" data-filter=".category-electric-surfboards">
+          <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/1.png');"
+            aria-hidden></span>
+          Электросёрфы
+        </button>
+      </li>
 
-            <li class="home-catalog__tab">
-                <button class="home-catalog__btn" type="button" data-filter=".category-electrofoils">
-                    <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/2.png');" aria-hidden></span>
-                    Электрофойлы
-                </button>
-            </li>
+      <li class="home-catalog__tab">
+        <button class="home-catalog__btn" type="button" data-filter=".category-electrofoils">
+          <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/2.png');"
+            aria-hidden></span>
+          Электрофойлы
+        </button>
+      </li>
 
-            <li class="home-catalog__tab">
-                <button class="home-catalog__btn" type="button" data-filter=".category-gasoline-surfers">
-                    <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/3.png');" aria-hidden></span>
-                    Бензинсёрфы
-                </button>
-            </li>
+      <li class="home-catalog__tab">
+        <button class="home-catalog__btn" type="button" data-filter=".category-gasoline-surfers">
+          <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/3.png');"
+            aria-hidden></span>
+          Бензинсёрфы
+        </button>
+      </li>
 
-            <li class="home-catalog__tab">
-                <button class="home-catalog__btn" type="button" data-filter=".category-electric-boats">
-                    <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/4.png');" aria-hidden></span>
-                    Электролодки
-                </button>
-            </li>
+      <li class="home-catalog__tab">
+        <button class="home-catalog__btn" type="button" data-filter=".category-electric-boats">
+          <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/4.png');"
+            aria-hidden></span>
+          Электролодки
+        </button>
+      </li>
 
-            <li class="home-catalog__tab">
-                <button class="home-catalog__btn" type="button" data-filter=".category-accessories">
-                    <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/5.png');" aria-hidden></span>
-                    Аксессуары
-                </button>
-            </li>
-        </ul>
+      <li class="home-catalog__tab">
+        <button class="home-catalog__btn" type="button" data-filter=".category-accessories">
+          <span class="home-catalog__preview" style="background-image: url('img/home-page/catalog/previews/5.png');"
+            aria-hidden></span>
+          Аксессуары
+        </button>
+      </li>
+    </ul>
 
-        <ul class="home-catalog__items">
-            <li class="home-catalog__card mix category-electric-surfboards">
-                @include('../../components/cards/_product-card.html', {
-                "badge": "-20%",
-                "img": "1",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-electric-surfboards">
-                @include('../../components/cards/_product-card.html', {
-                "badge": "-20%",
-                "img": "1",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-electrofoils">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-20%",
-                "img": "2",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-gasoline-surfers">
-                @include('../../components/cards/_product-card.html', {
-                "img": "3",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electric-boats">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-40%",
-                "img": "4",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-accessories">
-                @include('../../components/cards/_product-card.html', {
-                "img": "5",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electric-surfboards">
-                @include('../../components/cards/_product-card.html', {
-                "img": "6",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electrofoils">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-60%",
-                "img": "7",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-electrofoils">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-20%",
-                "img": "2",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-gasoline-surfers">
-                @include('../../components/cards/_product-card.html', {
-                "img": "3",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electric-boats">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-40%",
-                "img": "4",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-            <li class="home-catalog__card mix category-accessories">
-                @include('../../components/cards/_product-card.html', {
-                "img": "5",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electric-surfboards">
-                @include('../../components/cards/_product-card.html', {
-                "img": "6",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                })
-            </li>
-            <li class="home-catalog__card mix category-electrofoils">
-                @include('../../components/cards/_product-card.html', {
-                "discount": "-60%",
-                "img": "7",
-                "brand": "Rush Wave",
-                "title": "Электрический серф 12kW",
-                "price": "1 330 000 ₽",
-                "priceOld": "1 600 000 ₽"
-                })
-            </li>
-        </ul>
+    <ul class="home-catalog__items">
+      <li class="home-catalog__card mix category-electric-surfboards">
+        @include('../../components/cards/_product-card.html', {
+        "badge": "-20%",
+        "img": "1",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-electric-surfboards">
+        @include('../../components/cards/_product-card.html', {
+        "badge": "-20%",
+        "img": "1",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-electrofoils">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-20%",
+        "img": "2",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-gasoline-surfers">
+        @include('../../components/cards/_product-card.html', {
+        "img": "3",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electric-boats">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-40%",
+        "img": "4",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-accessories">
+        @include('../../components/cards/_product-card.html', {
+        "img": "5",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electric-surfboards">
+        @include('../../components/cards/_product-card.html', {
+        "img": "6",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electrofoils">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-60%",
+        "img": "7",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-electrofoils">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-20%",
+        "img": "2",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-gasoline-surfers">
+        @include('../../components/cards/_product-card.html', {
+        "img": "3",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electric-boats">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-40%",
+        "img": "4",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+      <li class="home-catalog__card mix category-accessories">
+        @include('../../components/cards/_product-card.html', {
+        "img": "5",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electric-surfboards">
+        @include('../../components/cards/_product-card.html', {
+        "img": "6",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        })
+      </li>
+      <li class="home-catalog__card mix category-electrofoils">
+        @include('../../components/cards/_product-card.html', {
+        "discount": "-60%",
+        "img": "7",
+        "brand": "Rush Wave",
+        "title": "Электрический серф 12kW",
+        "price": "1 330 000 ₽",
+        "priceOld": "1 600 000 ₽"
+        })
+      </li>
+    </ul>
 
-        <a class="home-catalog__link _button _button--primary" href="#">Каталог</a>
-    </div>
+    <a class="home-catalog__link _button _button--primary" href="#">Каталог</a>
+  </div>
 </section>
