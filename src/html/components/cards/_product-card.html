@@ -1,6 +1,6 @@
 <article class="product-card">
 
-    @if(typeof discount !== 'undefined' && discount) {
+    @if(typeof discount !== 'undefined') {
     <span class="product-card__badge">@discount</span>
     }
 
@@ -37,11 +37,19 @@
         <div class="product-card__info">
             <div class="product-card__prices">
                 <span class="product-card__price">@price</span>
-                @if(typeof priceOld !== 'undefined' && priceOld) {
+                @if(typeof priceOld !== 'undefined') {
                 <span class="product-card__salary">@priceOld</span>
                 }
             </div>
-            <button class="product-card__btn" aria-label="Добавить в корзину"></button>
+            <button class="product-card__btn _button _button--gradient" aria-label="Добавить в корзину">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.51334 20.0245C9.03655 20.0245 8.64854 20.4115 8.64854 20.8893C8.64854 21.3671 9.03655 21.7541 9.51334 21.7541C9.99112 21.7541 10.3781 21.3671 10.3781 20.8893C10.3781 20.4115 9.99112 20.0245 9.51334 20.0245ZM6.91895 20.8893C6.91895 19.457 8.08097 18.2949 9.51334 18.2949C10.9467 18.2949 12.1077 19.457 12.1077 20.8893C12.1077 22.3216 10.9467 23.4836 9.51334 23.4836C8.08097 23.4836 6.91895 22.3216 6.91895 20.8893Z" fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5846 20.0245C17.1068 20.0245 16.7198 20.4115 16.7198 20.8893C16.7198 21.3671 17.1068 21.7541 17.5846 21.7541C18.0623 21.7541 18.4494 21.3671 18.4494 20.8893C18.4494 20.4115 18.0623 20.0245 17.5846 20.0245ZM14.9902 20.8893C14.9902 19.457 16.1523 18.2949 17.5846 18.2949C19.0169 18.2949 20.179 19.457 20.179 20.8893C20.179 22.3216 19.0169 23.4836 17.5846 23.4836C16.1523 23.4836 14.9902 22.3216 14.9902 20.8893Z" fill="currentColor" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.86478C0 1.38698 0.38806 1 0.864787 1H2.25385C3.19322 1 4.0094 1.6486 4.22018 2.56417L4.65797 4.45916H20.8264C22.9505 4.45916 24.4748 6.50653 23.8641 8.54095L21.7885 15.4593C21.3865 16.8008 20.152 17.7197 18.7509 17.7197H8.46531C6.98864 17.7197 5.70767 16.7003 5.37581 15.2615L2.53487 2.95323C2.5046 2.82243 2.38786 2.72947 2.25382 2.72947H0.864762C0.388035 2.72947 0 2.3426 0 1.86478ZM5.05674 6.18873L7.0609 14.8723C7.21115 15.5263 7.79376 15.9901 8.46514 15.9901H18.7507C19.3874 15.9901 19.9484 15.5718 20.1312 14.9621L22.2066 8.04377C22.4844 7.11954 21.7926 6.18879 20.8262 6.18879L5.05674 6.18873Z" fill="currentColor" />
+                    <path d="M13.5029 8.0293V13.8804" stroke="currentColor" stroke-width="1.25382" stroke-linecap="round" />
+                    <path d="M16.4283 10.9551H10.5771" stroke="currentColor" stroke-width="1.25382" stroke-linecap="round" />
+                </svg>
+            </button>
         </div>
     </div>
 </article>

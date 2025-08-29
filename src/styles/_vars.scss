@@ -2,7 +2,9 @@
 	--color-white: #fff;
 	--color-black: #000;
 	--color-dark-800: #18202d;
-	--color-orange-600: #e8252e;
+	--color-red-100: #eec7c8;
+	--color-red-600: #e8252e;
+	--color-blue-100: #c7dde7;
 	--color-blue-200: #899cae;
 	--color-blue-400: #2dadd0;
 	--color-blue-light-transparent: rgba(230, 240, 242, 0.75);
@@ -14,7 +16,8 @@
 	);
 	--font-main: 'adineue PRO Cyr';
 	--font-secondary: 'Golos Text';
-	--shadow-primary: 0 0 8px 0 rgba(27, 106, 179, 0.25);
+	--shadow-blue: 0 0 8px 0 rgba(27, 106, 179, 0.25);
+	--shadow-red: 0 0 8px rgba(153, 24, 30, 0.25);
 	--dvh: 100vh;
 	--full-screen: calc(var(--dvh) * 100);
 }
