@@ -8,6 +8,7 @@
 
 		&__image {
 			height: 280px;
+			transition: height 0.3s;
 
 			@include mq(lg) {
 				height: 204px;

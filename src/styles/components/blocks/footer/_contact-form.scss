@@ -1,0 +1,93 @@
+.footer {
+	.contact-form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 335px;
+		gap: 16px;
+
+		@include mq(xl) {
+			order: 2;
+			margin-left: 0;
+			max-width: 100%;
+		}
+
+		&__header {
+			width: 100%;
+			text-align: right;
+
+			@include mq(xl) {
+				text-align: center;
+			}
+		}
+
+		&__title {
+			display: inline-block;
+			font-weight: 700;
+			font-size: 20px;
+			text-transform: uppercase;
+
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+
+			@include mq(xl) {
+				font-size: 46px;
+				text-transform: none;
+			}
+
+			@include mq(md) {
+				font-size: 32px;
+			}
+
+			@include mq(sm) {
+				font-size: 24px;
+			}
+		}
+
+		&__text {
+			@include mq(xl) {
+				font-family: var(--font-main);
+				font-weight: 300;
+				font-size: 24px;
+				letter-spacing: 0.04em;
+			}
+
+			@include mq(md) {
+				font-size: 18px;
+				text-align: center;
+			}
+		}
+
+		&__btn {
+			width: 100%;
+		}
+
+		&__privacy {
+			font-size: 15px;
+			text-align: right;
+
+			@include mq(xl) {
+				margin-right: auto;
+				text-align: left;
+			}
+
+			@include mq(md) {
+				font-size: 12px;
+			}
+
+			@include mq(sm) {
+				font-family: var(--font-main);
+			}
+		}
+
+		&__link {
+			text-decoration-line: underline;
+
+			@include mq(sm) {
+				text-decoration: none;
+			}
+		}
+	}
+}

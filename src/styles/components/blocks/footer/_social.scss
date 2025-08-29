@@ -1,0 +1,44 @@
+.footer {
+	.social {
+		display: flex;
+		align-items: center;
+		margin-right: auto;
+		gap: 20px;
+
+		@include mq(xl) {
+			margin-right: 0;
+		}
+
+		&__item {
+			display: block;
+			width: 48px;
+			height: 48px;
+
+			@include mq(sm) {
+				width: 36px;
+				height: 36px;
+			}
+		}
+
+		&__link {
+			@include flex-alignment(0);
+
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			background-color: var(--color-dark-800);
+		}
+
+		&__icon {
+			@include bg-properties(contain);
+
+			width: 24px;
+			height: 24px;
+
+			@include mq(sm) {
+				width: 18px;
+				height: 18px;
+			}
+		}
+	}
+}

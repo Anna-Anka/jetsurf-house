@@ -2,6 +2,11 @@ html {
 	box-sizing: border-box;
 }
 
+* {
+	scrollbar-color: var(--color-blue-400) var(--color-blue-light-transparent);
+	scrollbar-width: thin;
+}
+
 *,
 *::before,
 *::after {

@@ -100,6 +100,8 @@
 
 		&__swiper {
 			padding-bottom: 60px;
+			min-height: 580px;
+			cursor: grab;
 
 			&:not(:last-child) {
 				margin-bottom: 46px;
