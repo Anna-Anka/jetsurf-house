@@ -57,8 +57,7 @@
     grid-area: text;
   }
 
-  &__contacts,
-  &__address {
+  &__item {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -66,7 +65,7 @@
   }
 
 
-  &__contacts {
+  &__item--spacing {
     margin-bottom: 40px;
 
     @include mq(xxl) {
