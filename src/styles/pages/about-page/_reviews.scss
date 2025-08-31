@@ -11,84 +11,74 @@
     padding: 20px;
     margin-bottom: 30px;
     font-family: var(--font-secondary);
-  }
 
-  &__card {}
+    @include mq(xxl) {
+      max-width: 444px;
+    }
 
-  &__person {
-    position: relative;
-    min-height: 477px;
-    margin-bottom: 10px;
-  }
+    @include mq(xl) {
+      max-width: 490px;
+    }
 
-  &__img {
-    object-fit: contain;
-    border-radius: 15px;
-  }
-
-  &__name {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    padding: 8px 43px;
-    border-radius: 30px;
-    background-color: var(--color-dark-800);
-    color: var(--color-white);
-
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  &__sity {
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  &__text {
-    font-family: var(--font-main);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 5;
-    text-overflow: ellipsis;
-  }
-
-  &__more {
-    text-align: end;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration-line: underline;
+    @include mq(sm) {
+      max-width: 100%;
+    }
   }
 
   &__arrow-box {
     display: flex;
     justify-content: space-between;
   }
-}
 
-.reviews-about__next,
-.reviews-about__prev {
-  width: 54px;
-  height: 54px;
-  background-image: url('../img/about-page/reviews/arrow.svg');
-  background-size: 22px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  border: 2px solid var(--color-blue-400);
-  border-radius: 50%;
-}
+  .swiper-horizontal>.swiper-pagination-progressbar,
+  .swiper-pagination-progressbar.swiper-pagination-horizontal {
+    width: 100%;
+    height: 10px;
+    left: 0;
+    top: 0;
+  }
 
-.reviews-about__next {
-  transform: rotate(180deg);
+  &__pagination {
+    display: none;
+    width: 100%;
+    height: 10px;
+    margin-top: 20px;
+
+    .swiper-pagination-progressbar {
+      background-color: var(--color-blue-200);
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    .swiper-pagination-progressbar-fill {
+      background-color: var(--color-dark-800);
+      height: 100%;
+      border-radius: 5px;
+    }
+
+    @include mq(lg) {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  &__arrow {
+    width: 54px;
+    height: 54px;
+    background-image: url('../img/about-page/reviews/arrow.svg');
+    background-size: 22px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 2px solid var(--color-blue-400);
+    border-radius: 50%;
+
+    &--next {
+      transform: rotate(180deg);
+    }
+
+    @include mq(lg) {
+      display: none;
+    }
+  }
 }
