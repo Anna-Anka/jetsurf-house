@@ -4,9 +4,9 @@
     <address class="showroom__wrapper">
 
 
-      <p class="showroom__text">Как доехать, как найти, иная дополнительная информация</p>
 
       <div class="showroom__information">
+        <p class="showroom__text">Как доехать, как найти, иная дополнительная информация</p>
         <div class="showroom__item showroom__item--spacing">
           <span class="showroom__subtitle">Контакты:</span>
           <a class="showroom__contact" href="tel:+79957917885">+7 995 791-78-85</a>
@@ -20,7 +20,13 @@
         </address>
       </div>
 
-      <img class="showroom__img" src="img/about-page/contacts/1.jpg" alt="Фото сабов" loading="lazy">
+
+      <picture class="showroom__images">
+        <source srcset="img/about-page/contacts/1.avif" type="image/avif">
+        <source srcset="img/about-page/contacts/1.webp" type="image/webp">
+        <img class="showroom__img" src="img/about-page/contacts/1.jpg" alt="Фото сабов" loading="lazy">
+      </picture>
+
     </address>
   </div>
 </section>
