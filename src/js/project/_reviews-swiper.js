@@ -4,14 +4,17 @@ if (document.querySelector('.reviews-about__swiper')) {
     centeredSlides: true,
     loop: true,
     slidesOffsetBefore: 255,
+    grabCursor: true,
 
-    pagination: {
-      el: '.reviews-about__pagination',
-      clickable: true,
-    },
     navigation: {
       nextEl: '.reviews-about__arrow--next',
       prevEl: '.reviews-about__arrow',
+    },
+
+
+    scrollbar: {
+      el: '.reviews-about__scrollbar',
+      draggable: true,
     },
 
     breakpoints: {
@@ -19,19 +22,10 @@ if (document.querySelector('.reviews-about__swiper')) {
         slidesPerView: 1,
         slidesOffsetBefore: 0,
         centeredSlides: true,
-        pagination: {
-          el: ".reviews-about__pagination",
-          type: 'progressbar',
-        },
       },
       560: {
         slidesPerView: "auto",
         slidesOffsetBefore: 50,
-        pagination: {
-          el: ".reviews-about__pagination",
-          type: 'progressbar',
-        },
-
       },
       993: {
         slidesPerView: "auto",
@@ -44,6 +38,7 @@ if (document.querySelector('.reviews-about__swiper')) {
     },
   });
 }
+
 
 
 

@@ -1,4 +1,4 @@
-.reviews-card {
+.review-card {
   &__person {
     position: relative;
     text-align: center;
@@ -53,11 +53,8 @@
 
   &__text {
     font-family: var(--font-main);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 5;
-    text-overflow: ellipsis;
+    @include line-clamp(5);
+
 
     @include mq(xxl) {
       font-size: 18px;
