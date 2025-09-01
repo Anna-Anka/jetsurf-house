@@ -2,7 +2,6 @@ if (document.querySelector('.reviews-about__swiper')) {
     new Swiper('.reviews-about__swiper', {
         slidesPerGroup: 1,
         loop: true,
-        grabCursor: true,
 
         navigation: {
             nextEl: '.reviews-about__arrow--next',
