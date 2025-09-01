@@ -1,10 +1,21 @@
+// ui
+@import '../components/ui/button';
+@import '../components/ui/field';
+@import '../components/ui/link-call';
+@import '../components/ui/logo';
+@import '../components/ui/overlay';
+@import '../components/ui/title';
+@import '../components/ui/heading';
+
 // blocks
 @import '../components/blocks/header/header';
 @import '../components/blocks/header/burger-button';
 @import '../components/blocks/header/burger-menu';
 @import '../components/blocks/advantages';
 @import '../components/blocks/dealer';
-@import '../components/blocks/footer';
+@import '../components/blocks/footer/footer';
+@import '../components/blocks/footer/contact-form';
+@import '../components/blocks/footer/social';
 
 // cards
 @import '../components/cards/advantage-card';

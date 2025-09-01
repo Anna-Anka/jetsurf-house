@@ -8,6 +8,7 @@
 
 		&__image {
 			height: 280px;
+			transition: height 0.3s;
 
 			@include mq(lg) {
 				height: 204px;
@@ -60,7 +61,7 @@
 				top: 0;
 				width: 82px;
 				height: 2px;
-				background-color: var(--color-orange-600);
+				background-color: var(--color-red-600);
 				transform: translateX(-50%);
 			}
 		}

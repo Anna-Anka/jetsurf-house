@@ -1,7 +1,10 @@
 // home-page
 @import '../pages/home-page/application';
 @import '../pages/home-page/catalog';
-@import '../pages/home-page/hero';
+@import '../pages/home-page/hero/hero';
+@import '../pages/home-page/hero/hero-application';
+@import '../pages/home-page/hero/hero-catalog';
+@import '../pages/home-page/hero/hero-poster';
 @import '../pages/home-page/home-advantages';
 @import '../pages/home-page/map';
 @import '../pages/home-page/news';

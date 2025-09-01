@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	z-index: 2;
+	z-index: 20;
 	padding: 15px 0;
 
 	&__navigation {
@@ -31,7 +31,7 @@
 		font-size: 8px;
 		text-align: center;
 		color: var(--color-white);
-		background-color: var(--color-orange-600);
+		background-color: var(--color-red-600);
 	}
 
 	&__svg {

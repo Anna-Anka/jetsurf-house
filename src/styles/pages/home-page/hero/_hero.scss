@@ -1,0 +1,102 @@
+.home-page {
+	.hero {
+		@include bg-properties;
+
+		position: relative;
+		z-index: 1;
+		padding: 45px 0 192px;
+
+		@include mq(xxl) {
+			padding: 20px 0 55px;
+		}
+
+		@include mq(xl) {
+			padding: 10px 0 0;
+			background-image: none !important;
+		}
+
+		&::before {
+			@include bg-properties;
+
+			content: '';
+			position: absolute;
+			left: -10%;
+			top: -40%;
+			z-index: -1;
+			width: 110%;
+			height: 141%;
+			background-image: url('../img/home-page/hero/decor.svg');
+
+			@include mq(xl) {
+				display: none;
+			}
+		}
+
+		&__wrapper {
+			display: grid;
+			grid-template-columns: 1fr 1fr 2fr;
+			grid-template-rows: auto auto;
+			gap: 20px;
+
+			@include mq(xl) {
+				@include flex-simple(20px, column);
+			}
+		}
+
+		&__application,
+		&__product {
+			@include mq(xl) {
+				display: none;
+			}
+		}
+
+		&__title {
+			@include flex-simple(70px, column);
+
+			align-self: center;
+			grid-column: 3;
+			grid-row: 1 / 3;
+			margin-left: auto;
+			max-width: 550px;
+
+			@include mq(xl) {
+				position: absolute;
+				clip-path: inset(100%);
+				overflow: hidden;
+				margin: 1px;
+				border: 0;
+				padding: 0;
+				width: 1px;
+				height: 1px;
+				white-space: nowrap;
+				clip: rect(0 0 0 0);
+			}
+
+			span {
+				&:nth-child(2) {
+					text-align: right;
+				}
+			}
+		}
+
+		&__poster {
+			grid-column: 1 / 3;
+			grid-row: 1;
+		}
+
+		&__product {
+			grid-column: 1;
+			grid-row: 2 / 4;
+		}
+
+		&__catalog {
+			grid-column: 2;
+			grid-row: 2;
+		}
+
+		&__application {
+			grid-column: 2 / 4;
+			grid-row: 3;
+		}
+	}
+}
