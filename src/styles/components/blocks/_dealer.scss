@@ -103,6 +103,10 @@
 			min-height: 580px;
 			cursor: grab;
 
+			@include mq(lg) {
+				min-height: 460px;
+			}
+
 			&:not(:last-child) {
 				margin-bottom: 46px;
 
