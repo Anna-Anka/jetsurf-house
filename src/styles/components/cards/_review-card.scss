@@ -1,78 +1,109 @@
 .review-card {
-  &__person {
-    position: relative;
-    text-align: center;
-    margin-bottom: 10px;
-    padding-bottom: 15px;
-  }
+	font-family: var(--font-secondary);
 
-  &__img {
-    object-fit: cover;
-    border-radius: 15px;
-  }
+	&__person {
+		position: relative;
+		text-align: center;
+	}
 
-  &__name {
-    position: absolute;
-    bottom: 0;
-    right: 50%;
-    transform: translateX(50%);
-    padding: 8px 43px;
-    border-radius: 30px;
-    background-color: var(--color-dark-800);
-    color: var(--color-white);
-    font-weight: 700;
-    text-transform: uppercase;
+	&__image {
+		position: relative;
+		border-radius: 15px;
+		padding-bottom: 86%;
+		width: 100%;
 
-    @include mq(xxl) {
-      font-size: 18px;
-    }
+		img,
+		picture {
+			position: absolute;
+			inset: 0;
+			border-radius: inherit;
+			width: 100%;
+			height: 100%;
+		}
 
-    @include mq(sm) {
-      font-size: 14px;
-      padding: 8px 40px;
-    }
-  }
+		img {
+			object-fit: cover;
+		}
+	}
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+	&__name {
+		position: absolute;
+		right: 50%;
+		bottom: 0;
+		border: 10px solid var(--color-white);
+		border-radius: 60px;
+		padding: 8px 42px;
+		font-weight: 700;
+		line-height: 1.1;
+		letter-spacing: 0;
+		text-transform: uppercase;
+		color: var(--color-white);
+		background-color: var(--color-dark-800);
+		transform: translate(50%, 50%);
 
-  &__sity {
-    text-align: center;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: 18px;
-    font-weight: 400;
+		@include mq(xl) {
+			border-width: 8px;
+			font-size: 18px;
+		}
 
-    @include mq(sm) {
-      font-size: 16px;
-    }
-  }
+		@include mq(sm) {
+			border-width: 5px;
+			padding: 8px 40px;
+			font-size: 14px;
+		}
+	}
 
-  &__text {
-    font-family: var(--font-main);
-    @include line-clamp(5);
+	&__inner {
+		@include flex-simple(10px, column);
 
+		padding-top: 30px;
 
-    @include mq(xxl) {
-      font-size: 18px;
-    }
+		@include mq(xl) {
+			padding-top: 20px;
+		}
+	}
 
-    @include mq(sm) {
-      font-size: 16px;
-    }
-  }
+	&__sity {
+		overflow: hidden;
+		font-weight: 400;
+		font-size: 18px;
+		letter-spacing: 0;
+		text-align: center;
+		text-overflow: ellipsis;
 
-  &__more {
-    text-align: end;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration-line: underline;
+		@include mq(xl) {
+			font-family: var(--font-main);
+			letter-spacing: -0.04em;
+		}
 
-    @include mq(xxl) {
-      font-size: 12px;
-    }
-  }
+		@include mq(sm) {
+			font-size: 16px;
+		}
+	}
+
+	&__text {
+		@include line-clamp(5);
+
+		font-family: var(--font-main);
+
+		@include mq(xxl) {
+			font-size: 18px;
+		}
+
+		@include mq(sm) {
+			font-size: 16px;
+		}
+	}
+
+	&__more {
+		align-items: flex-end;
+		font-weight: 400;
+		font-size: 16px;
+		text-align: end;
+		text-decoration-line: underline;
+
+		@include mq(xxl) {
+			font-size: 12px;
+		}
+	}
 }

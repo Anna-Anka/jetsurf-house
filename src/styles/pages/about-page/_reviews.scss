@@ -1,72 +1,73 @@
 .reviews-about {
-  padding-bottom: 80px;
+	padding-bottom: 80px;
 
-  &__wrapper {
-    overflow: visible
-  }
+	&__swiper {
+		overflow: visible;
+	}
 
-  &__slide {
-    max-width: 512px;
-    flex-shrink: 0;
-    padding: 20px;
-    margin-bottom: 30px;
-    font-family: var(--font-secondary);
+	&__wrapper {
+		&:not(:last-child) {
+			margin-bottom: 45px;
 
-    @include mq(xxl) {
-      max-width: 444px;
-    }
+			@include mq(sm) {
+				margin-bottom: 35px;
+			}
+		}
+	}
 
-    @include mq(xl) {
-      max-width: 490px;
-    }
+	&__box {
+		@include flex-alignment(20px, space-between, center);
+	}
 
-    @include mq(sm) {
-      max-width: 100%;
-    }
-  }
+	&__scrollbar {
+		// position: relative;
+		display: none;
+		border-radius: 5px;
+		width: 100%;
+		height: 10px;
+		background-color: var(--color-blue-200);
 
-  &__box {
-    display: flex;
-    justify-content: space-between;
-  }
+		.swiper-scrollbar-drag {
+			border-radius: 5px;
+			height: 100%;
+			background-color: var(--color-dark-800);
+		}
 
-  &__scrollbar {
-    display: none;
-    width: 100%;
-    height: 10px;
-    margin-top: 20px;
-    background-color: var(--color-blue-200);
-    border-radius: 5px;
-    position: relative;
+		@include mq(lg) {
+			display: block;
+		}
+	}
 
-    .swiper-scrollbar-drag {
-      background-color: var(--color-dark-800);
-      border-radius: 5px;
-      height: 100%;
-    }
+	&__arrow {
+		@include bg-properties(22px 20px);
 
-    @include mq(lg) {
-      display: block;
-    }
-  }
+		flex-shrink: 0;
+		border: 2px solid var(--color-blue-400);
+		border-radius: 50%;
+		width: 54px;
+		height: 54px;
+		background-image: url('../img/about-page/reviews/arrow.svg');
+		background-color: transparent;
+		transition:
+			background-color 0.3s,
+			box-shadow 0.3s;
+		cursor: pointer;
 
-  &__arrow {
-    width: 54px;
-    height: 54px;
-    background-image: url('../img/about-page/reviews/arrow.svg');
-    background-size: 22px 20px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    border: 2px solid var(--color-blue-400);
-    border-radius: 50%;
+		&:hover,
+		&:active {
+			box-shadow: var(--shadow-blue);
+		}
 
-    &--next {
-      transform: rotate(180deg);
-    }
+		&:active {
+			background-color: #d1e1f0;
+		}
 
-    @include mq(lg) {
-      display: none;
-    }
-  }
+		&--next {
+			transform: rotate(180deg);
+		}
+
+		@include mq(lg) {
+			display: none;
+		}
+	}
 }
