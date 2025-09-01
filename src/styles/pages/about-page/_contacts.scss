@@ -7,9 +7,9 @@
 
   &__wrapper {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
     position: relative;
-    padding-top: 40px;
 
     @include mq(xxl) {
       font-size: 16px;
@@ -17,6 +17,7 @@
 
     @include mq(xl) {
       flex-direction: column;
+      padding-top: 40px;
     }
 
     @include mq(sm) {
@@ -26,6 +27,7 @@
 
   &__information {
     display: flex;
+    max-width: 335px;
     justify-content: end;
     flex-direction: column;
     color: var(--color-black);
@@ -34,6 +36,7 @@
     font-size: 18px;
 
     @include mq(xxl) {
+      max-width: 368px;
       font-size: 16px;
     }
 
@@ -60,12 +63,15 @@
   }
 
 
-  &__item--spacing {
-    margin-bottom: 40px;
+  &__item {
+    &--spacing {
+      margin-bottom: 40px;
 
-    @include mq(xxl) {
-      margin-bottom: 20px;
+      @include mq(xxl) {
+        margin-bottom: 20px;
+      }
     }
+
   }
 
   &__contact {
@@ -81,13 +87,20 @@
   }
 
   &__img {
+    max-width: 1045px;
     width: 100%;
+    max-height: 536px;
+    height: 100%;
     text-align: center;
     object-fit: cover;
     border-radius: 15px;
 
+    @include mq(xl) {
+      max-width: 100%;
+    }
+
     @include mq(sm) {
-      aspect-ratio: 1/1;
+      min-height: 320px;
     }
   }
 
